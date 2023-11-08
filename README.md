@@ -38,4 +38,4 @@
 
 # What I Learned
 
-> Learnt some cybersecurity stuff. It was a great experience trying to accomplish something that looks stuff and that is really tough to get references from the internet. We are happy to be a part of this Verve-a-thon'2023. Kudos to the organizers and faculties who have supported us throughout this hackathon.
+> Learnt some cybersecurity stuff. It was a great experience trying to accomplish something that looks stuff and that is really tough to get references from the internet. We are happy to be a part of this Verve-a-thon'2023. Kudos to the organizers and Sincere thanks to the faculties & dignitaries who have supported us throughout this hackathon.
