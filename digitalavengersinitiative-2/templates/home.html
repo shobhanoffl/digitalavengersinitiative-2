@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Hunter</title>
+    <link rel="stylesheet" href="/static/home.css">
+</head>
+<body style="background-image: url('https://www.garrisoneverest.com/wp-content/uploads/2014/09/hunting-shooting-firearms-social-media-company.jpg');">
+
+<div class="container">
+    <h1 style="color: blue;font-family: 'Times New Roman', Times, serif;">SOCIAL MEDIA HUNTER</h1>
+    <center>
+        <h2>Hunt with any one of the Detail</h2>
+    </center>
+    
+    <form action="/searchemail" method="post">
+        <div class="form-group" style="margin-bottom: 30px;">
+            <input type="text" name="email" placeholder="Email address" required style="width: 380px;">
+            <br><br>
+            <input type="submit" value="Search by Email" style="background-color: blue; color: white; font-weight: bolder; ">
+        </div>
+    </form>
+    <form action="/searchphone" method="post">
+        <div class="form-group" style="margin-bottom: 30px;">
+            <input type="text" name="phone" placeholder="Phone Number" required style="width: 380px;">
+            <br><br>
+            <input type="submit" value="Search by Mobile Number" style="background-color: blue; color: white; font-weight: bolder; ">
+        </div>
+    </form>
+
+    <h4>Search by name is a Beta Feature, Answers maynot be always correct</h4>
+    <form action="/searchuname" method="post">
+        <div class="form-group" style="margin-bottom: 30px;">
+            <input type="text" name="uname" placeholder="Name" required style="width: 380px;">
+            <br><br>
+            <input type="submit" value="Search by Name" style="background-color: blue; color: white; font-weight: bolder; ">
+        </div>
+    </form>
+
+    <!-- <form method="POST">
+        <div class="form-group" style="margin-bottom: 30px;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required pattern="^[A-Za-z\s]+$" title="Enter only words" style="right: 20px;" required>
+        </div>
+
+        <div class="form-group" style="margin-bottom: 30px;">
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" required pattern="\d{10}" placeholder="+1-xxx-xxx-xxxx" title="Enter only 10-digit mobile number" required>
+        </div>
+
+        <div class="form-group" style="margin-bottom: 40px;">
+            <label for="email" >Email Address:</label>
+            <input style="margin-right: 20px;" type = "email" id="email" name="email" placeholder="youremail@example.com" required>
+        </div>
+
+        <button type="submit">Search Social Media Accounts</button>
+    </form> -->
+</div>
+<script>
+    function validateEmail() {
+        var emailInput = document.getElementById("email");
+        var emailValue = emailInput.value;
+        var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+        if (!emailPattern.test(emailValue)) {
+            alert("Please enter a valid email address.");
+            emailInput.focus();
+            return false;
+        }
+
+        return true;
+    }
+</script>
+</body>
+</html>

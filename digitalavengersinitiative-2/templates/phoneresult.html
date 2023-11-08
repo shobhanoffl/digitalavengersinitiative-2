@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result Page</title>
+</head>
+<body style="background: url('https://biblestart.weebly.com/blog/gradient-art');">
+    <h1>Result</h1>
+    
+    <h2>Phone Number Used</h2>
+    <ul>
+        {% for line in result.split('\n') %}
+            {% if line.startswith('[+]') %}
+                <li>{{ line.strip('[]+').strip() }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    
+    <h2>Phone Number Not Used</h2>
+    <ul>
+        {% for line in result.split('\n') %}
+            {% if line.startswith('[-]') %}
+                <li>{{ line.strip('[]-').strip() }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+    <h2>Rate Limit</h2>
+    <ul>
+        {% for line in result.split('\n') %}
+            {% if line.startswith('[x]') %}
+                <li>{{ line.strip('[]x').strip() }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</body>
+</html>

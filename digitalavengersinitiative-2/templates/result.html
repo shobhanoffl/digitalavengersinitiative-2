@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>holehe Result</title>
+</head>
+<body style="background: url('https://biblestart.weebly.com/blog/gradient-art');">
+    <h1>holehe Library Result</h1>
+    <h2>Email Used</h2>
+    <ul>
+        {% for line in result.split('\n') %}
+            {% if line.startswith('[+]') %}
+                <li>{{ line.strip('[]+').strip() }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    
+    <h2>Email Not Used</h2>
+    <ul>
+        {% for line in result.split('\n') %}
+            {% if line.startswith('[-]') %}
+                <li>{{ line.strip('[]-').strip() }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+    <h2>Rate Limit</h2>
+    <ul>
+        {% for line in result.split('\n') %}
+            {% if line.startswith('[x]') %}
+                <li>{{ line.strip('[]x').strip() }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</body>
+</html>
