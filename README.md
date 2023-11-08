@@ -1,26 +1,41 @@
 # Vervathon-2023
 
-## Submission Instruction:
-  1. Fork this repository
-  2. Create a folder with your Team Name and your problem statement number
-  3. Upload all the code and necessary files in the created folder
-  4. Upload a **README.md** file in your folder with the below mentioned informations.
-  5. Generate a Pull Request with your Team Name. (Example: submission-XYZ_team-1)
+# Details
 
-## README.md must consist of the following information:
+**Team Name            : Digital Avengers Initiative**
 
-#### Team Name -
-#### Problem Statement - 
-#### Team Leader Email -
+**Problem Statement    : Social Media Account Identifier**
 
-## A Brief of the Prototype:
-  This section must include UML Diagrams and prototype description
-  
-## Tech Stack: 
-   List Down all technologies used to Build the prototype
-   
-## Step-by-Step Code Execution Instructions:
-  This Section must contain a set of instructions required to clone and run the prototype so that it can be tested and deeply analyzed
-  
-## What I Learned:
-   Write about the biggest learning you had while developing the prototype
+**Team Leader Email    : rshobhan02@gmail.com**
+
+
+
+
+# Brief of the Prototype
+
+* Social Media Hunter is a Tool that integrates multiple lookup tools available online.
+* This tool uses **Ignorant** to find websites which uses a user's Mobile Number, **holehe** to find websites which uses a user's Email ID and **Sherlock** to find websites which uses a user's username
+* These API's are optimized for usage in regular python program using a library called **subprocess**
+* Then the results are displayed in a appealing way using **Flask** Framework
+
+
+# Tech Stack
+
+* Python
+* Flask
+* API's - Ignorant, holehe, Sherlock
+* Python Libraries - subprocess
+* Frontend - HTML, CSS
+
+# Step-by-Step Code Execution Instructions
+
+* Clone the GitHub Repo
+* Install Flask
+* Make sure you've Python Installed
+* Open app.py
+* Execute `python3 install -r requirements.txt`
+* Execute `python3 app.py`
+
+# What I Learned
+
+> Learnt some cybersecurity stuff. It was a great experience trying to accomplish something that looks stuff and that is really tough to get references from the internet. We are happy to be a part of this Verve-a-thon'2023. Kudos to the organizers and faculties who have supported us throughout this hackathon.
